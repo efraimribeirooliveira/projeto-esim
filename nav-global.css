@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+header {
+    position: fixed;
+    z-index: 600;
+    width: 100%;
+}
+
+header div.cab {
+    background-color: rgba(0, 0, 0, 0.734);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 500;
+}
+
+header div.cab div.logo-esim {
+    position: relative;
+    left: 20px;
+}
+
+header div.cab div.logo-esim img {
+    width: 60px;
+}
+
+header div.cab div.logo-esim:hover {
+    rotate: 360deg;
+    transition-duration: 1.4s;
+}
+
+header div.cab div.text-esim p {
+    color: white;
+    font-size: 1.6em;
+}
+
+header div.cab div.text-esim p span {
+    color: #1666d7;
+}
+
+header div.cab nav div.nav {
+    position: relative;
+    right: 60px;
+}
+
+header div.cab nav div.nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+header div.cab nav div.nav ul li {
+    list-style: none;
+}
+
+header div.cab nav div.nav ul li a {
+    font-weight: 600;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(152, 152, 152);
+    transition-duration: .5s;
+}
+
+header div.cab nav div.nav ul li a:hover {
+    color: rgb(18, 18, 18);
+    background-color: #4a7ec6;
+    border-radius: 8px;
+}
+
+
+footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(to left, rgb(67, 74, 80), rgb(0, 0, 0) 40%);
+    color: rgb(185, 185, 185);
+    border-radius: 50px 50px 0px 0px;
+    text-align: center;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-bottom: -16px;
+    margin-left: auto;
+    width: 600px;
+}
+
+footer p#n1 {
+    padding-top: 5px;
+    margin-bottom: -5px;
+}
+
+footer strong {
+    color: rgb(153, 8, 8);
+}
