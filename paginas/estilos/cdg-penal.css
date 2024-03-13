@@ -16,7 +16,7 @@ main {
     margin-right: auto;
     margin-left: auto;
     background-color: white;
-    width: 1200px;
+    max-width: 1200px;
     padding-left: 40px;
     padding-bottom: 10px;
     line-height: 24px;
@@ -85,24 +85,4 @@ main div.conteudo p strong.cor {
     font-weight: 600;
 }
 
-footer {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-image: linear-gradient(to left, rgb(67, 74, 80), rgb(0, 0, 0) 40%);
-    color: rgb(185, 185, 185);
-    border-radius: 50px 50px 0px 0px;
-    text-align: center;
-    margin-top: 15px;
-    margin-right: auto;
-    margin-bottom: -16px;
-    margin-left: auto;
-    width: 600px;
-}
 
-footer p#n1 {
-    padding-top: 5px;
-    margin-bottom: -5px;
-}
-
-footer strong {
-    color: rgb(153, 8, 8);
-}
