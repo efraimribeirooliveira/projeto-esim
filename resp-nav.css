@@ -1,1 +1,17 @@
 @charset "UTF-8";
+
+@media screen and (max-width: 900px) {
+    header div.cab nav {
+        display: none;
+    } 
+}
+
+@media screen and (min-width: 901px) {
+    header div.cab menu div.burguer {
+        display: none;
+    }
+
+    header div.cab div.logo-esim img {
+     
+    }
+}

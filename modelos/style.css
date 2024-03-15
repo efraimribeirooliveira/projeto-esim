@@ -21,26 +21,17 @@ body {
 */
 
 header div.cab {
-    overflow: hidden;
     background-color: rgba(0, 0, 0, 0.734);
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-}
-
-header div.cab div.logo-esim {
-    position: relative;
-    left: 20px;
+    height: 75px;
 }
 
 header div.cab div.logo-esim img {
     width: 60px;
-}
-
-header div.cab div.logo-esim:hover {
-    rotate: 360deg;
-    transition-duration: 1.4s;
+    
 }
 
 header div.cab div.text-esim p {
@@ -53,8 +44,7 @@ header div.cab div.text-esim p span {
 }
 
 header div.cab nav div.nav {
-    position: relative;
-    right: 60px;
+    margin-right: 90px;
 }
 
 header div.cab nav div.nav ul{
@@ -81,6 +71,15 @@ header div.cab nav div.nav ul li a:hover {
     border-radius: 8px;
 }
 
+
+header div.cab menu div.burguer i {
+    color: rgb(194, 195, 196);
+    font-size: 2.4em;
+    position: relative;
+    left: 20px;
+    cursor: pointer;
+}
+
 /*
  /------------------------------------------------------\
 |                                                       |
@@ -97,7 +96,7 @@ header div.cab nav div.nav ul li a:hover {
  \------------------------------------------------------/
 */
 
-main {
+/*main {
     background-color: rgb(236, 236, 236);
     background-image: url(../imagens/design.png);
     background-size: cover;
@@ -105,6 +104,6 @@ main {
     width: 100vw;
     height: 100vh;
     position: fixed;
-}
+}*/
 
 
