@@ -1,17 +1,39 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1077px) {
+    header div.cab div.text-esim {
+        display: none;
+    }
+
+    header div.cab nav div.nav ul {
+        margin-right: 70px;
+    }
+}
+
+
+@media screen and (max-width: 730px) {
+    header div.cab {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    header div.cab menu {
+        display: block;
+    }
+    
     header div.cab nav {
         display: none;
     } 
+    
+    
+    header div.cab div.logo-esim img {
+        margin-right: 20px;
+    }
 }
 
-@media screen and (min-width: 901px) {
+@media screen and (max-width: 731px) {
     header div.cab menu div.burguer {
-        display: none;
+        display: block;
     }
 
-    header div.cab div.logo-esim img {
-     
-    }
 }

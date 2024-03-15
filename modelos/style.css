@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +10,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: grey;
-    
-    
 }
 
 /*
@@ -23,15 +23,15 @@ body {
 header div.cab {
     background-color: rgba(0, 0, 0, 0.734);
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 75px;
 }
 
 header div.cab div.logo-esim img {
     width: 60px;
-    
+    margin-left: 10px;
 }
 
 header div.cab div.text-esim p {
@@ -44,7 +44,7 @@ header div.cab div.text-esim p span {
 }
 
 header div.cab nav div.nav {
-    margin-right: 90px;
+    margin-right: 20px;
 }
 
 header div.cab nav div.nav ul{
@@ -71,6 +71,9 @@ header div.cab nav div.nav ul li a:hover {
     border-radius: 8px;
 }
 
+header div.cab menu {
+    display: none;
+}
 
 header div.cab menu div.burguer i {
     color: rgb(194, 195, 196);
@@ -96,7 +99,22 @@ header div.cab menu div.burguer i {
  \------------------------------------------------------/
 */
 
-/*main {
+/*menu#menu-lateral {
+    position: absolute;
+    top: 100px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+menu#menu-lateral a{
+    position: relative;
+    z-index: 501;
+}*/
+
+
+main {
     background-color: rgb(236, 236, 236);
     background-image: url(../imagens/design.png);
     background-size: cover;
@@ -104,6 +122,112 @@ header div.cab menu div.burguer i {
     width: 100vw;
     height: 100vh;
     position: fixed;
-}*/
+    z-index: 500;
+    
+}
 
+.sidebar {
+    position: fixed;
+    top: 0px;
+    left: -270px; /* Esconde o menu inicialmente */
+    width: 270px;
+    height: 100%;
+    background-color: #333333b7;
+    transition: left 0.3s ease;
+    z-index: 500;
+  }
+
+  .sidebar i#fechar-sidebar {
+    position: relative;
+    left: 241px;
+    color: rgb(255, 255, 255);
+    font-size: 1.8em;
+    background-color: rgba(0, 0, 0, 0.579);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+}
+
+
+.sidebar li {
+    margin-top: 30px;
+}
+
+.sidebar a {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(252, 252, 252);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.sidebar a#a1 {
+    padding: 11px 159px 11px 10px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar a img {
+    background-image: linear-gradient(144deg, white, black 55%);
+    padding: 7px;
+    border-radius: 5px;
+}
+.sidebar a#a2 {
+    padding: 11px 98px 11px 10px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sidebar a#a3 {
+    padding: 11px 62px 11px 10px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sidebar a#a4 {
+    padding: 11px 165px 11px 10px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar a#a1:hover {
+    background-color: rgba(93, 93, 93, 0.394);
+}
+
+.sidebar a#a2:hover {
+    background-color: rgba(93, 93, 93, 0.394);
+}
+
+.sidebar a#a3:hover {
+    background-color: rgba(93, 93, 93, 0.394);
+}
+
+.sidebar a#a4:hover {
+    background-color: rgba(93, 93, 93, 0.394);
+}
+
+
+.menu-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    z-index: 999;
+}
 
