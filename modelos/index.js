@@ -1,3 +1,4 @@
+let burguer = document.getElementById('brg')
 const sidebar = document.getElementById('sidebar')
 
 function toggleMenu() {
@@ -14,6 +15,5 @@ function fecharMenu() {
     } else {
         sidebar.style.left = '-270px'
     }
-      
-
-  }
+    
+}
