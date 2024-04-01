@@ -116,14 +116,6 @@ menu#menu-lateral a{
 
 main {
     background-color: rgb(88, 87, 87);
-    /*background-image: url(../imagens/design.png);*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: 500;
-    
 }
 
 .sidebar {
